@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish flower</title>
+    <link rel="shortcut icon" href="images/flower.ico">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo">Wish flower<span> best</span></a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#products">products</a>
+        <a href="#cart">cart</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>flowers</h3>
+        <span> natural & beautiful flowers </span>
+        <p>在这里你可以买到你想要的花</p>
+        <a href="#" class="btn"> 购买 </a>
+    </div>
+    
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span> about</span> us</h1>
+
+    <div class="row">
+
+        <div class="aboutus-container">
+            <img src="images/aboutus.JPG" alt="">
+            <h3>beautiful flowers </h3>
+        </div>
+
+        <div class="content">
+            <h3>关于我们</h3>
+            <p> 我们这里提供最新鲜的花 </p>
+            <p>当天现采现摘</p>
+            <p>飞舞的花儿像一首诗 ?写着秋天的心事 ?带着相思 ?轻轻、轻轻 ?飘向大地 ?</p>
+            <a href="#" class="btn">展示更多</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- prodcuts section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading">  <span>products</span> </h1>
+    
+    <div class="box-container">
+
+        <div class="box">
+            <span class="hot">热销</span>
+            <div class="image">
+                <img src="images/1.JPG" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" data-name="百合" data-price="30" onclick="addToCart(this)">加入购物车</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>百合</h3>
+                <div class="price"> ¥30 <span>¥40</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/IMG_4855.JPG" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" data-name="玫瑰" data-price="20" onclick="addToCart(this)">加入购物车</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>玫瑰</h3>
+                <div class="price"> ¥20 <span>¥30</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/IMG_4857.JPG" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" data-name="茉莉" data-price="30" onclick="addToCart(this)">加入购物车</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>茉莉</h3>
+                <div class="price"> ¥30 <span>¥50</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/IMG_4861.JPG" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" data-name="桃花" data-price="30" onclick="addToCart(this)">加入购物车</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>桃花</h3>
+                <div class="price"> ¥30<span>¥60</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <span class="hot">热销</span>
+                <img src="images/IMG_4863.JPG" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" data-name="花束" data-price="105" onclick="addToCart(this)">加入购物车</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>花束</h3>
+                <div class="price"> ¥105 <span>¥234</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/IMG_4864.JPG" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" data-name="太阳花" data-price="33" onclick="addToCart(this)">加入购物车</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>太阳花</h3>
+                <div class="price"> ¥33 </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/IMG_4867.JPG" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" data-name="山茶花" data-price="30" onclick="addToCart(this)">加入购物车</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>山茶花</h3>
+                <div class="price"> ¥30  </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/IMG_4868.JPG" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" data-name="荷花" data-price="35" onclick="addToCart(this)">加入购物车</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>荷花</h3>
+                <div class="price"> ¥35 </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="hot">热销</span>
+            <div class="image">
+                <img src="images/222.JPG" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" data-name="海棠" data-price="40" onclick="addToCart(this)">加入购物车</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>海棠</h3>
+                <div class="price"> ¥40  </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- prodcuts section ends -->
+
+<!-- cart section starts  -->
+
+<section class="cart" id="cart">
+
+    <h1 class="heading"> <span> cart flowers</span>  </h1>
+
+    <div class="cart-list">
+        <h3>购物车</h3>
+        <ul id="cart-list"></ul>
+        <p id="total-price">总价：￥0</p>
+        <button onclick="checkout()">结算</button>
+
+    </div>
+
+</section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">products</a>
+            <a href="#">cart</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my favorite</a>
+        </div>
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+123-456-7890</a>
+            <a href="#">example@gmail.com</a>
+            <a href="#">mumbai, india - 400104</a>
+            
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> mr. web designer </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
